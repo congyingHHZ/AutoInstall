@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    android:accessibilityEventTypes="typeWindowStateChanged|typeWindowContentChanged"
+    android:description="@string/description"
+    android:accessibilityFeedbackType="feedbackVisual"
+    android:accessibilityFlags="flagDefault"
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+    android:canRequestTouchExplorationMode="true"
+    android:packageNames="com.miui.securitycenter,com.miui.packageinstaller"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <!--  第3行等同于过滤 AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED -->
+    <!--  第4行只监听 com.android.packageinstaller  -->
+    <!--响应的应用：屏蔽掉响应则所有的应用 android:packageNames="com.miui.securitycenter,com.miui.packageinstaller"-->
+    <!-- 响应事件类型：typeALLmask 所有事件 android:accessibilityEventTypes="typeWindowStateChanged" -->
